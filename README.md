@@ -1,3 +1,7 @@
+The goal is to add a little script to the original project in order to periodically upload files to Dropbox from my Raspberry Pi.
+
+Link to the original repository : https://github.com/andreafabrizi/Dropbox-Uploader
+
 # Dropbox Uploader
 
 Dropbox Uploader is a **BASH** script which can be used to upload, download, delete 
