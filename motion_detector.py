@@ -40,8 +40,12 @@ def saveImage(width, height, diskSpaceToReserve):
     keepDiskSpaceFree(diskSpaceToReserve)
     time = datetime.now()
     filename = "capture-%04d%02d%02d-%02d%02d%02d.jpg" % (time.year, time.month, time.day, time.hour, time.minute, time.second)
-    subprocess.call("raspistill -vf -hf -w 1296 -h 972 -t 0 -e jpg -q 15 -o %s" % filename, shell=True)
+    subprocess.call("raspistill -vf -hf -w 1296 -h 972 -t 0 -e jpg -o %s" % filename, shell=True)
     print "Captured %s" % filename
+    subprocess.call("./dropbox_uploader.sh upload %s" % filename, shell=True)
+    print "Uploaded %s" % filename
+    subprocess.call("rm %s" % filename, shell=True)
+    print "Cleared %s" % filename
 
 # Keep free space above given level
 def keepDiskSpaceFree(bytesToReserve):
