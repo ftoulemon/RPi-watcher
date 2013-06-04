@@ -3,7 +3,7 @@ The goal of this project is to upload a picture to dropbox when a motion is dete
 
 Link to the original repository : https://github.com/andreafabrizi/Dropbox-Uploader
 
-Link to the oriinal motion detector script : http://www.raspberrypi.org/phpBB3/viewtopic.php?t=45235&p=362909
+Link to the original motion detector script : http://www.raspberrypi.org/phpBB3/viewtopic.php?t=45235&p=362909
 
 # Dropbox Uploader
 
